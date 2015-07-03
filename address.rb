@@ -36,12 +36,12 @@ john_home.city = "San Francisco"
 john_home.state = "CA"
 john_home.postal_code = "94132"
 
-puts jason_home.to_s('short')
-puts "\n"
-puts jason_home.to_s('long')
-
-puts "\n"
-puts john_home.to_s('short')
-puts "\n"
-puts john_home.to_s('long')
-puts "\n"
+# puts jason_home.to_s('short')
+# puts "\n"
+# puts jason_home.to_s('long')
+#
+# puts "\n"
+# puts john_home.to_s('short')
+# puts "\n"
+# puts john_home.to_s('long')
+# puts "\n"
