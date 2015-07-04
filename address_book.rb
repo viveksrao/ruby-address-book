@@ -10,14 +10,31 @@ class AddressBook
   def display_menu
     loop do
       puts "Address Book"
+      puts "a: Add Contact"
+      puts "p: Print Address Book"
       puts "e: Exit"
       print "Enter your choice: "
       input = gets.chomp.downcase
       case input
+      when 'a'
+        add_contact
+      when 'p'
+        print_contact_list
       when 'e'
         break
       end
     end
+  end
+
+  def add_contact
+    contact = Contact.new
+    print "First Name: "
+    contact.first_name = gets.chomp
+    print "Middle Name: "
+    contact.middle_name = gets.chomp
+    print "Last Name: "
+    contact.last_name = gets.chomp
+    contacts.push(contact)
   end
 
   def print_contact_list
